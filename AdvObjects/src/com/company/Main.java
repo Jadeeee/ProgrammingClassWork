@@ -7,8 +7,6 @@ public class Main {
 //most of this assignment is trying to read the existing code to understand how it works,
         //ask a classmate or instructor if you are unsure how the code works.
 
-        //once the player is dead print out the player's level and how much xp they had.
-
         Player player = new Player(); //generate a new player
         //create main game loop that continues until the player has no health
          while(player.getHealth() > 0){
@@ -22,10 +20,12 @@ public class Main {
                  enemy.takeDamage(player);
                  //has the player take damage
                  player.takeDamage(enemy);
-                 
              }
 
          }
+        //once the player is dead print out the player's level and how much xp they had.
+        System.out.println("You made it to level " +player.getPlayerLevel());
+        System.out.println("You had "+player.getXp()+" xp");
 
     }
 }
