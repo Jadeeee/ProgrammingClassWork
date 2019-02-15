@@ -28,4 +28,54 @@ public class Main {
         System.out.println("You had "+player.getXp()+" xp");
 
     }
+/*
+    public class Car{
+        //properties
+        String make;
+        String model;
+        double milesTravled;
+        double mpg;
+        double tankSize;
+        double gallonsOfGas;
+
+        //constructor
+        public Car(){
+            make = "Ford";
+            model = "Escape";
+            milesTravled = 0;
+            mpg = 24;
+            tankSize=12;
+
+        }
+
+        public Car(String Make, String Model, double MPG, double TankSize){
+            make = Make;
+            model = Model;
+            mpg = MPG;
+            tankSize = TankSize;
+            gallonsOfGas = tankSize;
+            milesTravled = 0;
+        }
+        //methods
+        public void DriveTillEmpty(){
+            milesTravled = milesTravled + mpg * gallonsOfGas;
+            gallonsOfGas = 0;
+
+        }
+        public void FillTank(){
+            gallonsOfGas = tankSize;
+        }
+        public void DriveXMiles(double x) {
+            if (gallonsOfGas > x / mpg) {
+                //have enough
+                milesTravled = milesTravled + x;
+                gallonsOfGas = gallonsOfGas - x / mpg;
+            } else {
+                //didnt have enough gallons
+                DriveTillEmpty();
+            }
+        }
+
+    }
+*/
 }
